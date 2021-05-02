@@ -1,6 +1,5 @@
 package com.trendyol.step_definitions;
 
-import com.trendyol.utilities.DBUtils;
 import com.trendyol.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -30,17 +29,7 @@ public class Hooks {
 
     }
 
-    @Before("@db")
-    public void setUpdb(){
-        System.out.println("\tconnecting to database...");
-        DBUtils.createConnection();
-    }
 
-    @After("@db")
-    public void closeDb(){
-        System.out.println("\tdisconnecting to database...");
-        DBUtils.destroy();
-    }
 
 
 

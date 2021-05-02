@@ -51,6 +51,10 @@ public class TaskDefs {
         try {
             dashboardPage.chooseRandomTab();
             dashboardPage.chooseRandomButik();
+            for (int j = 0; j < butikPage.productList.size(); j++) {
+                Assert.assertTrue(butikPage.productList.get(j).isDisplayed());
+            }
+
         }catch (Exception e){
             e.printStackTrace();
         }

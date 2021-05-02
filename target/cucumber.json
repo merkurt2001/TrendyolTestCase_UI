@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-02T22:43:54.774Z",
+        "start_timestamp": "2021-05-02T23:38:44.811Z",
         "before": [
           {
             "result": {
-              "duration": 6308014000,
+              "duration": 5736002700,
               "status": "passed"
             },
             "match": {
@@ -19,12 +19,23 @@
         "name": "",
         "description": "",
         "id": "trendyol-task-calışması;",
+        "after": [
+          {
+            "result": {
+              "duration": 1145033500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.trendyol.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8707710700,
+              "duration": 6551000900,
               "status": "passed"
             },
             "line": 4,
@@ -36,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 54032914900,
+              "duration": 44782993100,
               "status": "passed"
             },
             "line": 5,
@@ -48,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 7320219200,
+              "duration": 9108805600,
               "status": "passed"
             },
             "line": 6,
@@ -60,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 6891358600,
+              "duration": 3583965200,
               "status": "passed"
             },
             "line": 7,
@@ -72,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2401755700,
+              "duration": 2361980100,
               "status": "passed"
             },
             "line": 8,
