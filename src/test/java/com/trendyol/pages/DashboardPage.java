@@ -24,10 +24,17 @@ public class DashboardPage {
 
 
   public void chooseRandomTab (){
-      Random rd = new Random(tabs.size()-1);
-      int randomTab = rd.nextInt();
+      Random rd = new Random();
+      int randomTab = rd.nextInt(tabs.size()-1);
       tabs.get(randomTab).click();
+      System.out.println(tabs.get(randomTab).getText()+ " isimli tab seçildi.");
 }
+
+    public void chooseRandomButik (){
+        Random rd = new Random();
+        int randomButik = rd.nextInt(butikImages.size()-1);
+        butikImages.get(randomButik).click();
+    }
 
 
 
