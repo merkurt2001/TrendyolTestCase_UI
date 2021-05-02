@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-02T21:20:28.556Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "trendyol-task-calışması;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25461425500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Sisteme kayıtlı bir kullanıcı ile login olunmalı",
+            "match": {
+              "location": "com.trendyol.step_definitions.TaskDefs.sisteme_kayıtlı_bir_kullanıcı_ile_login_olunmalı()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2979800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login olduktan sonra, aşağıda numaralandırılan tab’lere tıklanıp yüklenmeyen butik imajı varsa hata fırlatmadan log basılmalı",
+            "match": {
+              "location": "com.trendyol.step_definitions.TaskDefs.login_olduktan_sonra_aşağıda_numaralandırılan_tab_lere_tıklanıp_yüklenmeyen_butik_imajı_varsa_hata_fırlatmadan_log_basılmalı()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Sonrasında rastgele bir butiğe giderek, ürün görsellerinin yüklenip yüklenmediğinin kontrolü sağlanmalı (hata fırlatmayıp yine log basılabilir)",
+            "match": {
+              "location": "com.trendyol.step_definitions.TaskDefs.sonrasında_rastgele_bir_butiğe_giderek_ürün_görsellerinin_yüklenip_yüklenmediğinin_kontrolü_sağlanmalı_hata_fırlatmayıp_yine_log_basılabilir()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2996400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Herhangi bir ürünün detayına gidilmeli",
+            "match": {
+              "location": "com.trendyol.step_definitions.TaskDefs.herhangi_bir_ürünün_detayına_gidilmeli()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2000900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ürünü sepete ekleyip test tamamlanmalı",
+            "match": {
+              "location": "com.trendyol.step_definitions.TaskDefs.ürünü_sepete_ekleyip_test_tamamlanmalı()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Trendyol Task Calışması",
+    "description": "",
+    "id": "trendyol-task-calışması",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/task.feature",
+    "tags": []
+  }
+]
