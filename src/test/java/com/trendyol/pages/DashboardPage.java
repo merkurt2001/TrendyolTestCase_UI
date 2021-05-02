@@ -14,19 +14,19 @@ public class DashboardPage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(id="login-email")
+    @FindBy(css=".tab-link")
     public List<WebElement> tabs;
+
+    @FindBy(xpath="//span[@class ='image-container']/img")
+    public List<WebElement> butikImages;
 
 
 
 
   public void chooseRandomTab (){
-
       Random rd = new Random(tabs.size()-1);
       int randomTab = rd.nextInt();
       tabs.get(randomTab).click();
-
-
 }
 
 

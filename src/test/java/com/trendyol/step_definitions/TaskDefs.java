@@ -2,9 +2,13 @@ package com.trendyol.step_definitions;
 
 import com.trendyol.pages.DashboardPage;
 import com.trendyol.pages.LoginPage;
+import com.trendyol.utilities.BrowserUtils;
 import com.trendyol.utilities.ConfigurationReader;
 import com.trendyol.utilities.Driver;
 import io.cucumber.java.en.Given;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class TaskDefs {
     LoginPage loginPage = new LoginPage();
@@ -21,6 +25,26 @@ public class TaskDefs {
 
     @Given("Login olduktan sonra, aşağıda numaralandırılan tab’lere tıklanıp yüklenmeyen butik imajı varsa hata fırlatmadan log basılmalı")
     public void login_olduktan_sonra_aşağıda_numaralandırılan_tab_lere_tıklanıp_yüklenmeyen_butik_imajı_varsa_hata_fırlatmadan_log_basılmalı() {
+  /*      try {
+            for (WebElement tab : dashboardPage.tabs) {
+                tab.click();
+                for (WebElement butikImage : dashboardPage.butikImages) {
+                    Assert.assertTrue(butikImage.isDisplayed());
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }*/
+
+        for (WebElement tab : dashboardPage.tabs) {
+            tab.click();
+            BrowserUtils.waitFor(1);
+            for (WebElement butikImage : dashboardPage.butikImages) {
+                Assert.assertTrue(butikImage.isDisplayed());
+            }
+        }
+
+
 
     }
 
