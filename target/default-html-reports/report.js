@@ -1,11 +1,29 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/task.feature");
 formatter.feature({
-  "name": "Trendyol Task Calışması",
+  "name": "TRENDYOL TASK",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
+formatter.background({
   "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Login Functionality",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.trendyol.step_definitions.TaskDefs.Login_Functionality()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify that boutique images under each Tab is displayed",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -14,59 +32,18 @@ formatter.scenario({
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "Sisteme kayıtlı bir kullanıcı ile login olunmalı",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.trendyol.step_definitions.TaskDefs.sisteme_kayıtlı_bir_kullanıcı_ile_login_olunmalı()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Login olduktan sonra, aşağıda numaralandırılan tab’lere tıklanıp yüklenmeyen butik imajı varsa hata fırlatmadan log basılmalı",
+  "name": "User should be able to click Tabs and all the images should be displayed",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.trendyol.step_definitions.TaskDefs.login_olduktan_sonra_aşağıda_numaralandırılan_tab_lere_tıklanıp_yüklenmeyen_butik_imajı_varsa_hata_fırlatmadan_log_basılmalı()"
+  "location": "com.trendyol.step_definitions.TaskDefs.User_should_be_able_to_click_Tabs_and_all_the_images_should_be_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.trendyol.step_definitions.TaskDefs.User_should_be_able_to_click_Tabs_and_all_the_images_should_be_displayed(TaskDefs.java:47)\r\n\tat ✽.User should be able to click Tabs and all the images should be displayed(file:///C:/Users/me/IdeaProjects/TrendyolTestCase_UI/src/test/resources/features/task.feature:7)\r\n",
+  "status": "failed"
 });
-formatter.step({
-  "name": "Sonrasında rastgele bir butiğe giderek, ürün görsellerinin yüklenip yüklenmediğinin kontrolü sağlanmalı (hata fırlatmayıp yine log basılabilir)",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.trendyol.step_definitions.TaskDefs.sonrasında_rastgele_bir_butiğe_giderek_ürün_görsellerinin_yüklenip_yüklenmediğinin_kontrolü_sağlanmalı_hata_fırlatmayıp_yine_log_basılabilir()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Herhangi bir ürünün detayına gidilmeli",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.trendyol.step_definitions.TaskDefs.herhangi_bir_ürünün_detayına_gidilmeli()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Ürünü sepete ekleyip test tamamlanmalı",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.trendyol.step_definitions.TaskDefs.ürünü_sepete_ekleyip_test_tamamlanmalı()"
-});
-formatter.result({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

@@ -1,6 +1,7 @@
 package com.trendyol.pages;
 
 import com.trendyol.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -20,6 +21,11 @@ public class DashboardPage {
     @FindBy(xpath="//span[@class ='image-container']/img")
     public List<WebElement> butikImages;
 
+    @FindBy(className ="footer__wrapper--sectionTitle")
+    public WebElement downToPage;
+
+    @FindBy(linkText = "Yardım & Destek")
+    public WebElement upToPage;
 
 
 

@@ -35,6 +35,10 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
                     break;
+                case "chrome-noNotifications":
+                    WebDriverManager.chromedriver().setup();
+                    driverPool.set(new ChromeDriver(new ChromeOptions().addArguments("use-fake-ui-for-media-stream")));
+                    break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
